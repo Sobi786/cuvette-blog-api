@@ -38,7 +38,9 @@ const User = mongoose.model('User', { //users
 // })
 
 
-
+app.get('/api', (req,res)=>{
+    res.send('our first render')
+})
 
 //READ: GET /users
 app.get('/users', async (req, res) => {
